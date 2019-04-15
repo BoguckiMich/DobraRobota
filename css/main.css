@@ -1,0 +1,229 @@
+body {
+  width: 100%;
+}
+nav {
+  /* display: inline-flex; */
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: #fff;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px 20px;
+  animation: 1s fadein 0.5s forwards;
+  opacity: 0;
+  z-index: 1;
+  background-color: rgba(104, 104, 104, 0.2);
+}
+
+@keyframes fadein {
+  100%{
+    opacity: 1;
+  }
+};
+
+header nav {
+  margin-right: -15px;
+}
+
+header nav li {
+  display: inline-flex;
+  margin: 0 15px;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 50px 20px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+
+.top {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  text-shadow: black 0.1em 0.1em 0.2em ;
+}
+
+.top .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  background-color: #005451;
+}
+
+.top h1 {
+  font: bold 60px ;
+  margin-bottom: 15px;
+}
+
+.top h3 {
+  font: normal 28px;
+  margin-bottom: 40px;
+}
+
+.top-content {
+  opacity: 0;
+  margin-top:100px;
+  animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+100%{
+  opacity: 1;
+  margin: 0;
+}
+}
+
+.top {
+  color: #fff;
+}
+
+hr {
+  width: 250px;
+  height: 3px;
+  background-color: #005451;
+  border: 0;
+
+}
+
+.colors {
+  background-color: #e19794;
+  color: #000;
+  padding: 1em;
+
+}
+
+.colors:nth-child(odd) {
+  background-color: #599487;
+  color: #fff;
+}
+
+
+.card-deck {
+  margin: 20px;
+  font-size: 20px;
+}
+
+footer a {
+  color: #000;
+}
+
+
+@media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+        float: left;
+        width: 25%;
+        max-width: 100%; }
+    .carousel-multi-item-2 .col-md-6 {
+        float: left;
+        width: 50%;
+        max-width: 100%; }
+      }
+
+.carousel-multi-item-2 .card img {
+    border-radius: 2px;
+    /* height: 30em; */
+    /* width: 25em; */
+  }
+/* .card img {
+    background-clip: content-box;
+    background-position: center;
+    background-size: cover;
+} */
+.carousel-inner {
+  height: 600px;
+}
+
+@media (max-width: 900px) {
+  .carousel-inner{
+    height: 200px;
+    }
+}
+
+@media (max-width: 1200px) {
+  .carousel-inner{
+    height: 400px;
+    }
+}
+
+@media (max-width: 768px){
+  .carousel-inner{
+    height: auto;
+  }
+}
+
+i {
+  color: #000;
+}
+
+.controls-top {
+  justify-content: center;
+  text-align: center;
+
+}
+
+.carousel-item div.card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #599487; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+em {
+  font-size: 5px;
+}
+
+.contact-bot a i {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-bot a:hover {
+  text-decoration: none;
+}
